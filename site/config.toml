@@ -1,0 +1,134 @@
+baseurl = "http://bathandbodymom.com/"
+languageCode = "en-us"
+title = "Bath and Body Mom"
+theme = "hugo-creative-theme"
+googleAnalytics = ""
+
+[params]
+
+	# You can use Markdown syntax for urls [text](//url.to/source) for
+	# most longer texts.
+
+	# All icons using Fontawesome's icon font. Look at http://fontawesome.io/icons/
+	# for more icons. The icons are represented by their corresponding
+	# CSS class.
+
+	# All projects of the portfolio are defined in their own files.
+	# You can find example projects at 'exampleSite/data/projects'. Copy the 'projects'
+	# folder into the 'data' directory at the root of this Hugo site.
+	# For more information take a look at the README.
+
+	# To provide some metadata for search engines feel free to add some
+	# information about you and your website.
+	name = "Your name"
+	description = "Your description"
+
+	# The path must be relative to the static folder
+	favicon = "favicon.ico"
+
+
+	# Navigation
+	[params.navigation]
+		brand = "Bath and Body Mom"
+
+		[params.navigation.links]
+			about     = "About"
+			services  = "Features"
+			portfolio = "Portfolio"
+			social 	  = "Follow"
+			contact   = "Contact"
+
+
+	# Hero section
+	[params.hero]
+		# To change the background of the hero section, replace the 'header.jpg' at './static/img' with your own.
+		slogan     = "Bath and Body Mom"
+		subtitle   = "Invent Your Signature Scent"
+		buttonText = "Find out more"
+
+
+	# About section
+	[params.about]
+		headline    = ""
+		description = "Thank you for visiting Bath·ologie by Bath and Body Mom. I am <i>Fiona Bartels</i>. Independent Bath·ologist and Corporate Team Leader. Bath·ologie is the only company where you design your own natural/organic/vegan products."
+		buttonText  = "Get started!"
+
+
+	# Service section
+	[params.services]
+		headline = ""
+
+        [[params.services.list]]
+            icon = "fa-shopping-bag"
+            title = "Shop"
+			description = "Design now"
+			link = "http://www.bathologie.com/membertoolsdotnet/shoppingcartv3/startpublicshopping.aspx?referringDealerID=813490"
+
+        [[params.services.list]]
+			icon = "fa-users"
+			title = "Host"
+			description = "Book your next Blending Bar"
+			link = "http://www.bathologie.com/host-a-blending-bar.aspx"
+
+		[[params.services.list]]
+            icon = "fa-user-plus"
+            title = "Join"
+            description = "Become a Founding Member today"
+			link = "http://www.bathologie.com/membertoolsdotnet/enrollmentnew/startpublicenrollment.aspx?referringDealerID=813490"
+
+        [[params.services.list]]
+            icon = "fa-heart"
+            title = "Free samples"
+            description = "Try it before you buy"
+			link = "https://form.jotform.com/60415122185143"
+
+		[[params.services.list]]
+            icon = "fa-leaf"
+            title = "Scent Profile"
+            description = "Reveal your fragrant personality"
+			link = "https://form.jotform.com/60415122185143"
+
+        [[params.services.list]]
+            icon = "fa-youtube-play"
+            title = "Videos"
+			description = "Check out my how to videos"
+			link = "https://www.youtube.com/channel/UCph77vNjteKUrSV9UAPLHkA"
+
+	# Social section
+	[params.social]
+		headline = "Follow me on social media!"
+
+		[[params.social.list]]
+            icon = "fa-facebook"
+            title = "Facebook"
+			link = "https://www.facebook.com/Bathologie.bathandbodymom/"
+
+		[[params.social.list]]
+            icon = "fa-instagram"
+            title = "Instagram"
+			link = "https://www.instagram.com/bathologie.mom/"
+
+		[[params.social.list]]
+            icon = "fa-twitter"
+            title = "Twitter"
+			link = "https://twitter.com/Bathologie_Mom"
+
+    # # Portfolio modals
+	# [params.portfolio.modal]
+        # client = "Client"
+        # date = "Date"
+        # category = "Category"
+        # buttonText = "Close"
+
+	# Contact section
+	[params.contact]
+		headline = "Let's Get In Touch!"
+		description = "Ready to book your next Blending Bar or join the movement? <br> Give me a call or send an email and I will get back to you as soon as possible!"
+		phone = "702.728.1883"
+		email = "pure4mommy@gmail.com"
+
+	# Google Maps section
+	# [params.location]
+	# 	latitude  = "34.007850"
+	# 	longitude = "-118.499305"
+	# 	maps_api_key = ""

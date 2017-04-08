@@ -1,0 +1,6 @@
+hugo:
+  image: orangesword/bathbodymom
+  ports:
+    - "80:1313"
+  command: [hugo,server,--baseUrl=www.bathandbodymom.com,--bind=0.0.0.0,--appendPort=false]
+  restart: always
