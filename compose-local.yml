@@ -1,6 +1,9 @@
-hugo:
-  image: orangesword/bathbodymom
+version: '3'
+
+services:
+  hugo:
+    restart: always
+    image: benjaminbartels/bathbodymom
   ports:
     - "1313:1313"
-  command: [hugo,server,--baseUrl=localhost,--bind=0.0.0.0,--appendPort=true]
-  restart: always
+    command: [hugo,server,--baseUrl=localhost,--bind=0.0.0.0,--appendPort=false]
