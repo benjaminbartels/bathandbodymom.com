@@ -1,6 +1,18 @@
-hugo:
-  image: orangesword/bathbodymom
-  ports:
-    - "80:1313"
-  command: [hugo,server,--baseUrl=www.bathandbodymom.com,--bind=0.0.0.0,--appendPort=false]
-  restart: always
+version: '3'
+
+services:
+  hugo:
+    restart: always
+    image: benjaminbartels/bathbodymom
+    expose:
+      - 80
+    environment:
+      VIRTUAL_HOST: www.all4days.com
+      LETSENCRYPT_HOST: www.all4days.com
+      LETSENCRYPT_EMAIL: bbartels@gmail.com
+    command: [hugo,server,--baseUrl=www.all4days.com,--bind=0.0.0.0,--port=80,--appendPort=false]
+
+networks:
+    default:
+        external:
+            name: nginx-proxy
